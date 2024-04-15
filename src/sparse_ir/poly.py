@@ -208,7 +208,7 @@ class PiecewiseLegendreFT:
     ``n`` must be odd.
     """
     _DEFAULT_GRID = np.hstack([np.arange(2**6),
-                        (2**np.linspace(6, 25, 16*(25-6)+1)).astype(int)])
+                        (2**np.linspace(6, 35, 16*(35-6)+1)).astype(int)])
 
     def __init__(self, poly, freq='even', n_asymp=None, power_model=None):
         if poly.xmin != -1 or poly.xmax != 1:
