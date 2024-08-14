@@ -247,7 +247,7 @@ class TauConst(AbstractAugmentation):
 
     def hat(self, n):
         n = _util.check_reduced_matsubara(n, zeta=0)
-        return np.sqrt(self._beta) * (n == 0).astype(np.complex)
+        return np.sqrt(self._beta) * (n == 0).astype(complex)
 
 
 class TauLinear(AbstractAugmentation):
